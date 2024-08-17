@@ -44,20 +44,21 @@ public class ListaBD {
     }
     
     public void alterar (int i, String novoElemento){
-        if (lista.isEmpty()) {
+           if (lista.isEmpty()) {
             JOptionPane.showMessageDialog(null, "Lista vazia.");
-        }else if (i >= lista.size() || i < 1) {
+        }else if (i >= lista.size() || i > 1) {
             JOptionPane.showMessageDialog(null, "Perfume não existe.");
         }else {
             lista.set(i, novoElemento);
             JOptionPane.showMessageDialog(null, "Alterado com sucesso!");
+        
         }
     }
     
     public void excluir (int i){
-        if (lista.isEmpty()) {
+       if (lista.isEmpty()) {
             JOptionPane.showMessageDialog(null, "Lista vazia.");
-        }else if (i >= lista.size() || i < 1) {
+        }else if (i >= lista.size() || i > 1) {
             JOptionPane.showMessageDialog(null, "Perfume não existe.");
         }else {
             lista.remove(i);
@@ -65,7 +66,3 @@ public class ListaBD {
         }
     }
 }
-    
-    
-   
-
